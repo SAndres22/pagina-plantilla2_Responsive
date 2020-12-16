@@ -1,0 +1,1135 @@
+/* 
+Reseteando los valores predeterminados de los navegadores 
+*/
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Serif JP", serif;
+}
+
+/* Version Movile */
+
+/* HEADER */
+
+/* top-redes_Sociales */
+
+.contenedor-header .top-redes {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #051842;
+  color: #fff;
+}
+
+.contenedor-header .top-redes p {
+  margin-left: 12px;
+  text-align: center;
+  padding-right: 11px;
+}
+
+.contenedor-header .top-redes ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contenedor-header .top-redes ul li {
+  padding-right: 8px;
+}
+
+.contenedor-header .top-redes ul li a {
+  color: #fff;
+}
+
+/* Header Logo */
+
+.header .logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* Iconos personales del usuario */
+
+.header .iconos-user {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header .iconos-user a i {
+  color: #de3550;
+  font-size: 1.7em;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* Filtro de Busqueda */
+
+.header .buscador {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 35px;
+}
+
+.buscador select {
+  width: 30%;
+}
+
+.buscador input {
+  width: 60%;
+}
+
+.buscador a {
+  width: 10%;
+  background-color: #de3550;
+  text-align: center;
+}
+
+.buscador a i {
+  line-height: 35px;
+  color: #fff;
+}
+
+/* Boton de categorias */
+
+.contenedor-header .cont-2 .categorias {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #de3550;
+  color: #fff;
+  width: 98%;
+  padding: 5px 0;
+  font-weight: bold;
+  border: none;
+}
+
+.btn {
+  opacity: 0.8;
+}
+
+/* .ESCONDER MENU DESKTOP */
+.contenedor-header .cont-2 .esconder {
+  display: none;
+}
+
+/* SECCION principal */
+
+main .contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.contenedor-principal .targeta1 {
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+
+.contenedor-principal .targeta2,
+.contenedor-principal .targeta3 {
+  width: 100%;
+  position: relative;
+}
+
+.contenedor-principal .targeta1 img {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 300px;
+}
+
+.contenedor-principal .targeta2 img,
+.contenedor-principal .targeta3 img {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: auto;
+}
+
+/* Targeta 1 con slider */
+ul.slider {
+  position: relative; /*Necesitamos que el ul sea relativo*/
+}
+ul.slider li {
+  opacity: 0; /*Ocultamos todos los <li>*/
+  transition: opacity 0.5s;
+  position: absolute; /*Posicionamos en absoluto los <li>*/
+}
+ul.slider li:first-child {
+  opacity: 1; /*Mostramos el primer <li>*/
+}
+ul.slider li:target {
+  opacity: 1; /*Mostramos el <li> al que apunta el enlace*/
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+ul.slider li {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+nav ul {
+  position: absolute;
+  top: 250px;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+nav ul li i {
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+nav a:hover {
+  cursor: pointer;
+}
+
+nav a:active {
+  font-size: 1.1em;
+}
+
+/* Targeta 1 */
+.contenedor-principal .targeta1 ul li > div.targ-1_a {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contenedor-principal .targeta1 ul li > div.targ-1_b {
+  position: absolute;
+  top: 35%;
+  right: 60%;
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contenedor-principal .targeta1 ul li > div p {
+  margin-bottom: 8px;
+}
+
+.contenedor-principal .targeta1 ul li > div a {
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #de3550;
+  padding: 2px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Targeta 2 */
+
+.contenedor-principal .targeta2 > div {
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(222, 53, 80, 0.4);
+  border-radius: 20px;
+}
+
+.contenedor-principal .targeta2 > div p {
+  margin-bottom: 8px;
+}
+
+/* Targeta 3 */
+
+.contenedor-principal .targeta3 > div {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contenedor-principal .targeta3 > div p {
+  margin-bottom: 8px;
+}
+
+.contenedor-principal .targeta3 > div a {
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #de3550;
+  padding: 2px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+/* seccion del contenido en general */
+
+section div.texto {
+  margin: 30px auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+section div.texto span,
+section div.texto h2 {
+  display: block;
+  text-align: center;
+}
+
+/* Targetas de los articulos de ventas */
+
+/* Targeta del articulo 1 */
+
+section .container-content {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.container-content .targeta-articulo {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 20px;
+}
+
+.container-content .targeta1 {
+  background-image: url("../img/articulo1_Buso.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  padding: 10px;
+}
+
+.container-content .targeta-articulo div {
+  width: 13%;
+  height: 13%;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.container-content .targeta-articulo div:hover {
+  background-color: #de3550;
+}
+
+.container-content .targeta-articulo div.icon-like {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+
+.container-content .targeta-articulo div.icon-share {
+  top: 50px;
+  right: 10px;
+  position: absolute;
+}
+
+.container-content .targeta-articulo div.icon-search {
+  top: 90px;
+  right: 10px;
+  position: absolute;
+}
+
+.container-content .targeta-articulo > div a {
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+.container-content .targeta-articulo > div a i {
+  color: #051842;
+}
+
+.container-content .targeta-articulo > div a i:hover {
+  color: #fff;
+}
+
+.container-content .targets {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  padding: 10px;
+}
+/* Targeta del articulo 2 */
+
+.container-content .targeta2 {
+  background-image: url("../img/articulo2-zapatos_Deport.png");
+}
+
+/* Targeta del articulo 3 */
+
+.container-content .targeta3 {
+  background-image: url("../img/articulo3-vestido.png");
+}
+
+/* Targeta del articulo 4 */
+
+.container-content .targeta4 {
+  background-image: url("../img/articulo4-bolso_dama.png");
+}
+
+/* Targeta del articulo 5 */
+
+.container-content .targeta5 {
+  background-image: url("../img/articulo5-camisaManga_larga.png");
+}
+
+/* Targeta del articulo 6 */
+
+.container-content .targeta6 {
+  background-image: url("../img/articulo6-Bolso_Hombre.png");
+}
+
+/* Targeta del articulo 7 */
+
+.container-content .targeta7 {
+  background-image: url("../img/articulo7_zapatos_Dama.png");
+}
+
+/* Targeta del articulo 8 */
+
+.container-content .targeta8 {
+  background-image: url("../img/articulo8-falda_mujer.png");
+}
+
+/* Boton de ver mas Articulos */
+
+.ver-mas {
+  width: 98%;
+}
+
+.ver-mas .btn {
+  font-size: 1.2em;
+  display: block;
+  margin: 30px auto;
+  width: 50%;
+  text-align: center;
+}
+
+/* Seccion 2 para promocion */
+
+.section-2 {
+  width: 90%;
+  margin: 0 auto;
+  background-color: lightblue;
+  box-shadow: 0 4px 8px 0 rgba(255, 62, 94, 0.2),
+    0 6px 20px 0 rgba(222, 53, 80, 0.19);
+  margin-bottom: 30px;
+}
+
+section .cont-seccion_2 {
+  height: 250px;
+  background-image: url("../img/buso_cont.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  background-position: center;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+section .cont-seccion_2 div {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Seccion 3 de articulos  */
+
+.section-3 .container-content2 {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-3 .container-content2 .target-articulos_2 {
+  width: 40%;
+  height: 100px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px 0 rgba(173, 216, 230, 0.2),
+    0 6px 20px 0 rgba(173, 216, 230, 0.19);
+  margin-bottom: 10px;
+}
+
+/* TOOLTIP */
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 35.6%;
+  background-color: rgba(222, 53, 80, 0.7);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.section-3 .container-content2 .art {
+  background-size: 60% 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Articulo 1  */
+.section-3 .container-content2 .art-1 {
+  background-image: url("../img/art1-polo_mujer.png");
+}
+
+/* Articulo 2  */
+
+.section-3 .container-content2 .art-2 {
+  background-image: url("../img/art2-polo_hombre.png");
+}
+
+/* Articulo 3  */
+
+.section-3 .container-content2 .art-3 {
+  background-image: url("../img/art3-Zapato-Hombre_Deport.png");
+}
+
+/* Articulo 4  */
+
+.section-3 .container-content2 .art-4 {
+  background-image: url("../img/art4-Zapato-mujer_depor.png");
+}
+
+/* Articulo 5  */
+
+.section-3 .container-content2 .art-5 {
+  background-image: url("../img/art5-Bolso-Hombre_estudiante.png");
+}
+
+/* Articulo 6  */
+
+.section-3 .container-content2 .art-6 {
+  background-image: url("../img/art6-pantaloneta-hombre.png");
+}
+
+/* Articulo 7  */
+
+.section-3 .container-content2 .art-7 {
+  background-image: url("../img/art7-sudadera-Mujer.png");
+}
+
+/* Articulo 8 */
+
+.section-3 .container-content2 .art-8 {
+  background-image: url("../img/art8-Buso-mujer.png");
+}
+
+/* Articulo 9  */
+
+.section-3 .container-content2 .art-9 {
+  background-image: url("../img/art9-gorra.png");
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(173, 216, 230, 0.2);
+}
+
+.footer .cont-footer {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 0.9em;
+}
+
+.footer .cont-footer div.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer .cont-footer div .footer-logo {
+  width: 45%;
+  height: 45%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.cont-footer div.list {
+  margin-bottom: 10px;
+}
+/* todas las listas de los span */
+
+.cont-footer div.list span {
+  display: block;
+  margin-left: 10%;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* Todas las listas de los ul */
+.cont-footer div.list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont-footer div.list ul li {
+  list-style-type: square;
+  color: #051842;
+}
+
+/* arreglar los a de la lista */
+.cont-footer div.list ul li a {
+  color: black;
+}
+
+/* arreglar los a de la lista */
+.cont-footer div.list ul li a:hover {
+  border-bottom: 3px solid #de3550;
+}
+
+/* Footer derechos reservados */
+
+.footer .reserv {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.footer .reserv .formas-pago {
+  width: 100%;
+  height: 70px;
+  background-image: url("../img/formas-pago.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* RUPTURA PARA MOVILES MAS ANCHOS 400PX */
+@media only screen and (min-width: 400px) {
+  /* Targetas de los articulos de ventas */
+
+  /* Targeta del articulo 1 */
+
+  section .container-content {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* Version Movile horizontal- tablet vertical */
+
+@media only screen and (min-width: 600px) {
+  /* HEADER */
+
+  /* top-redes_Sociales */
+  .contenedor-header .top-redes p {
+    line-height: 50px;
+  }
+  .contenedor-header .top-redes ul li {
+    padding-right: 12px;
+  }
+
+  /* Seccion Principal targetas */
+
+  /* Targeta1 */
+
+  .contenedor-principal .targeta1 > div {
+    top: 30%;
+    left: 60%;
+  }
+
+  /* Targeta 2 */
+  .contenedor-principal .targeta2 > div {
+    top: 60%;
+    right: 50%;
+  }
+
+  /* Targeta 3 */
+
+  .contenedor-principal .targeta3 > div {
+    top: 40%;
+    left: 62%;
+  }
+
+  /* seccion del contenido en general */
+
+  /* Targetas de los articulos de ventas */
+
+  /* Targeta del articulo 1 */
+
+  section .container-content {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  section .container-content {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 25px;
+  }
+
+  /* Seccion 3 de articulos  */
+
+  .section-3 .container-content2 .target-articulos_2 {
+    width: 30%;
+  }
+
+  /* TOOLTIP */
+
+  .tooltip .tooltiptext {
+    width: 26.6%;
+  }
+}
+/* Version Tablet Horizontal */
+
+@media only screen and (min-width: 768px) {
+  /* Seccion Principal */
+
+  /* Targeta 1 */
+
+  .contenedor-principal .targeta1 img {
+    width: 100%;
+    min-height: 300px;
+    max-height: 440px;
+  }
+  /* Targeta 2 y 3 */
+
+  .contenedor-principal .targeta2 img,
+  .contenedor-principal .targeta3 img {
+    min-width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  /* Seccion 3 de articulos  */
+
+  .section-3 .container-content2 .target-articulos_2 {
+    width: 22%;
+    height: 150px;
+  }
+
+  /* TOOLTIP */
+
+  .tooltip .tooltiptext {
+    width: 19.56%;
+  }
+
+  /* Footer */
+
+  .footer .cont-footer div.logo-text {
+    flex-direction: row;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .footer .cont-footer div .footer-logo {
+    display: block;
+    width: 15%;
+    height: 15%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .footer .cont-footer .menu-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer .cont-footer div.list {
+    width: 40%;
+  }
+}
+/* Version laptos y desktops */
+
+@media only screen and (min-width: 992px) {
+  /* Header Logo */
+
+  .header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .header .cont {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .header .buscador {
+    width: 70%;
+  }
+
+  .header .buscador select {
+    width: 20%;
+  }
+
+  /* Iconos personales del usuario */
+  .header .iconos-user {
+    margin-bottom: 0;
+    width: 20%;
+  }
+  .header .iconos-user .esconder {
+    display: none;
+  }
+
+  /* Boton de categorias y menú desktop */
+
+  .contenedor-header .cont-2 {
+    display: flex;
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cont-2 .categorias a {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .contenedor-header .cont-2 .categorias {
+    margin-top: 0;
+  }
+
+  .contenedor-header .cont-2 .esconder {
+    display: block;
+  }
+  .contenedor-header .cont-2 .menu-desktop ul li {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+
+  .contenedor-header .cont-2 .menu-desktop ul li:hover {
+    background-color: #de3550;
+  }
+
+  .contenedor-header .cont-2 .menu-desktop ul li a {
+    font-size: 1.3em;
+    color: black;
+  }
+
+  .contenedor-header .cont-2 .menu-desktop ul li a:hover {
+    color: #fff;
+  }
+
+  /* Carrito para pantallas grandes */
+  .contenedor-header .cont-2 .carrito-desk {
+    font-size: 1.7em;
+    color: #de3550;
+  }
+
+  .contenedor-header .cont-2 .carrito-desk::after {
+    content: "My cart";
+    font-size: 0.5em;
+    font-weight: bold;
+    color: black;
+    margin-left: 7px;
+  }
+
+  /* CONTENIDO principal */
+  main .contenedor-principal {
+    flex-direction: row;
+    width: 100%;
+    height: 440px;
+  }
+
+  main .contenedor-principal .cont-targeta2-3 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 440px;
+  }
+
+  .contenedor-principal .targeta1 {
+    width: 50%;
+    height: 440px;
+  }
+
+  .contenedor-principal .targeta2,
+  .contenedor-principal .targeta3 {
+    width: 100%;
+    height: 220px;
+  }
+
+  .contenedor-principal .targeta1 img {
+    height: 440px;
+    width: 100%;
+  }
+
+  /* Targeta 1 */
+
+  ul.slider {
+    position: relative; /*Necesitamos que el ul sea relativo*/
+  }
+  ul.slider li {
+    opacity: 0; /*Ocultamos todos los <li>*/
+    transition: opacity 0.5s;
+    position: absolute; /*Posicionamos en absoluto los <li>*/
+  }
+  ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+  }
+  ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> al que apunta el enlace*/
+  }
+
+  nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  ul.slider li {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 400px;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  nav ul li i {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    cursor: pointer;
+  }
+
+  nav a:active {
+    font-size: 1.3em;
+  }
+
+  /* Targeta 1 */
+  .contenedor-principal .targeta1 ul li > div.targ-1_a {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .contenedor-principal .targeta1 ul li > div.targ-1_b {
+    position: absolute;
+    top: 35%;
+    right: 65%;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .contenedor-principal .targeta1 ul li > div p {
+    margin-bottom: 8px;
+  }
+
+  .contenedor-principal .targeta1 ul li > div a {
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #de3550;
+    padding: 2px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .contenedor-principal .targeta2 img,
+  .contenedor-principal .targeta3 img {
+    min-width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  /* Targeta 2 */
+  .contenedor-principal .targeta2 > div {
+    top: 20%;
+    background-color: rgba(222, 53, 80, 0);
+  }
+
+  /* Targeta 3 */
+
+  .contenedor-principal .targeta3 > div {
+    left: 54%;
+  }
+  /* Contenido general */
+
+  section div.texto span {
+    font-size: 1.7em;
+  }
+
+  section div.texto h2 {
+    font-size: 2.7em;
+  }
+
+  /* seccion del contenido en general */
+
+  /* Targetas de los articulos de ventas */
+
+  /* Targeta del articulo 1 */
+
+  section .container-content {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  section .container-content {
+    width: 90%;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 25px;
+  }
+
+  /* Boton de ver mas Articulos */
+
+  .ver-mas {
+    width: 98%;
+  }
+
+  .ver-mas .btn {
+    font-size: 1.2em;
+    display: block;
+    margin: 30px auto;
+    width: 20%;
+    text-align: center;
+  }
+
+  /* Seccion 2 para promocion */
+
+  section .cont-seccion_2 {
+    height: 450px;
+    background-attachment: fixed;
+  }
+
+  section .cont-seccion_2 div {
+    top: 60%;
+    font-size: 1.3em;
+  }
+
+  /* Footer derechos reservados */
+
+  .footer .reserv {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer .reserv > div {
+    width: 26%;
+  }
+}
+
+/* Version Pc de escritorio y pantallas grandes */
+
+@media only screen and (min-width: 1200px) {
+  /* HEADER */
+
+  /* top-redes_Sociales */
+  .contenedor-header .top-redes ul li {
+    padding-right: 15px;
+  }
+
+  /* Targeta3 */
+  .contenedor-principal .targeta3 > div {
+    top: 30%;
+    left: 65%;
+  }
+
+  /* Seccion 3 de articulos  */
+
+  .section-3 .container-content2 .target-articulos_2 {
+    width: 22%;
+    height: 200px;
+  }
+
+  /* Footer */
+
+  .footer .cont-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .cont-footer div.logo-text {
+    width: 60%;
+    margin-bottom: 0;
+  }
+
+  .cont-footer div.list {
+    margin-bottom: 0;
+  }
+
+  .cont-footer div.logo-text .footer-logo {
+    width: 17%;
+    height: 44%;
+  }
+  .cont-footer div.list span {
+    padding-top: 20px;
+  }
+
+  .cont-footer div.menu-footer {
+    width: 30%;
+  }
+}
